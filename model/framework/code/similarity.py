@@ -17,7 +17,7 @@ from rdkit.Chem import AllChem
 
 warnings.filterwarnings("ignore")
 
-MAX_N_MOLECULES = 1000
+MAX_N_MOLECULES = 100
 
 
 def calculate_similarity(ref_mol, mol_list):

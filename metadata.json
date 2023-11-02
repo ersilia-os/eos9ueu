@@ -17,5 +17,5 @@
     ],
     "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3606195/",
     "Source Code": "https://pypi.org/project/smallworld-api/",
-    "License": "GPLv3"
+    "License": "MIT"
 }
