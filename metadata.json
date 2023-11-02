@@ -4,18 +4,18 @@
     "Status": "In progress",
     "Title": "Small World Enamine REALsearch",
     "Description": "SmallWorld is an index of chemical space containing more than 230B molecular substructures. Here we use the Small World API to post a query to the SmallWorld server to sample 100 molecules within a distance of 10 for different the Enamine REAL map.",
-    "Mode": "",
-    "Task": [],
-    "Input": [],
-    "Input Shape": "",
-    "Output": [],
-    "Output Type": [],
-    "Output Shape": "",
-    "Interpretation": "",
+    "Mode": "Online",
+    "Task": ["Similarity"],
+    "Input": ["Compound"],
+    "Input Shape": "Single",
+    "Output": ["Compound"],
+    "Output Type": ["String"],
+    "Output Shape": "List",
+    "Interpretation": "List of 100 nearest neighbors",
     "Tag": [
         "Similarity"
     ],
     "Publication": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3606195/",
     "Source Code": "https://pypi.org/project/smallworld-api/",
-    "License": "GPLv3"
+    "License": "MIT"
 }
