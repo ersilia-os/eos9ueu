@@ -1,4 +1,4 @@
-# Small World Enamine REALsearch
+# Small World Enamine REAL search
 
 SmallWorld is an index of chemical space containing more than 230B molecular substructures. Here we use the Small World API to post a query to the SmallWorld server to sample 100 molecules within a distance of 10 for different the Enamine REAL map.
 
