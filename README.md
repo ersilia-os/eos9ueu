@@ -26,6 +26,7 @@ SmallWorld is an index of chemical space containing more than 230B molecular sub
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos9ueu)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ueu.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos9ueu) (AMD64, ARM64)
 
 ## Citation
 
