@@ -4,6 +4,7 @@ Small World is an index of chemical space containing more than 230B molecular su
 
 This model was incorporated on 2023-11-01.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos9ueu`
@@ -13,7 +14,7 @@ This model was incorporated on 2023-11-01.
 - **Task:** `Sampling`
 - **Subtask:** `Similarity search`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Similarity`
 
 ### Input
