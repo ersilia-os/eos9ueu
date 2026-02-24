@@ -40,11 +40,19 @@ def sort_molecules_by_similarity(ref_mol, mol_list, top_n=MAX_N_MOLECULES):
     sorted_mols = [mol for mol, sim in paired][:top_n]
     return sorted_mols
 
-def get_available_maps():
+def get_available_maps(retries=4, delay=2):
     url = "https://sw.docking.org/search/maps"
-    response = urllib.request.urlopen(url)
-    data = json.loads(response.read())
-    return data
+    for i in range(retries):
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req) as response:
+                return json.loads(response.read())
+        except (urllib.error.URLError, ConnectionResetError) as e:
+            if i < retries - 1:
+                time.sleep(delay)
+                continue
+            else:
+                raise e
 
 
 def get_maps():
