@@ -40,7 +40,7 @@ def sort_molecules_by_similarity(ref_mol, mol_list, top_n=MAX_N_MOLECULES):
     sorted_mols = [mol for mol, sim in paired][:top_n]
     return sorted_mols
 
-def get_available_maps(retries=4, delay=2):
+def get_available_maps(retries=10, delay=2):
     url = "https://sw.docking.org/search/maps"
     for i in range(retries):
         try:
@@ -97,7 +97,10 @@ def get_maps():
 class SmallWorldSampler(object):
     def __init__(self, dist=10, length=100):
         self.maps = get_maps()
-        self.sw = SmallWorld()
+        try:
+            self.sw = SmallWorld(update_dbs=True)
+        except Exception:
+            self.sw = SmallWorld(update_dbs=False)
         self.dist = dist
         self.length = length
 
