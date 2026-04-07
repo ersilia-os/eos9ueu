@@ -108,14 +108,19 @@ class SmallWorldSampler(object):
         t0 = time.time()
         sampled_smiles = []
         for m in self.maps:
-            try:
-                db_name = m[1]
-                results: pd.DataFrame = self.sw.search(
-                    smiles, dist=self.dist, db=db_name, length=self.length
-                )
-            except:
-                print(smiles, m, "did not work...")
-                results = None
+            results = None
+            for attempt in range(5):
+                try:
+                    db_name = m[1]
+                    results = self.sw.search(
+                        smiles, dist=self.dist, db=db_name, length=self.length
+                    )
+                    break
+                except Exception:
+                    if attempt < 4:
+                        time.sleep(2 ** attempt)
+                    else:
+                        print(smiles, m, "did not work...")
             if results is not None:
                 sampled_smiles += list(results["smiles"])
             t1 = time.time()
