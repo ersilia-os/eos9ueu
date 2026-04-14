@@ -2,7 +2,7 @@
 
 Small World is an index of chemical space containing more than 230B molecular substructures. Here we use the Small World API to post a query to the SmallWorld server. We sample 100 molecules within a distance of 10 specifically for the Enamine REAL map, not the entire SmallWorld domain. Please check other small-world models available in our hub.
 
-This model was incorporated on 2023-11-01.Last packaged on 2026-03-20.
+This model was incorporated on 2023-11-01.Last packaged on 2026-04-14.
 
 ## Information
 ### Identifiers
@@ -44,17 +44,17 @@ _10 of 100 columns are shown_
 - **Source:** `Online`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9ueu](https://hub.docker.com/r/ersiliaos/eos9ueu)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ueu.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ueu.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `568`
-- **Image Size (Mb):** `527.42`
+- **Image Size (Mb):** `527.71`
 
 **Computational Performance (seconds):**
-- 10 inputs: `47.56`
-- 100 inputs: `1179.89`
+- 10 inputs: `45.6`
+- 100 inputs: `-1`
 - 10000 inputs: `-1`
 
 ### References
