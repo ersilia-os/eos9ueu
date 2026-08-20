@@ -1,6 +1,6 @@
 # Small World Enamine REAL search
 
-Retrieves 100 close analogues from Enamine REAL, a make-on-demand space of readily synthesisable compounds, via the SmallWorld index. Unlike fingerprint similarity, SmallWorld measures the exact size of the maximum common edge subgraph shared by two structures, giving a graph-based rather than statistical notion of closeness, made tractable by a precomputed index. Because REAL molecules are enumerated from reliable reactions and building blocks, retrieved hits are generally orderable rather than purely hypothetical.
+Small World is an index of chemical space containing more than 230B molecular substructures. Here we use the Small World API to post a query to the SmallWorld server. We sample 100 molecules within a distance of 10 specifically for the Enamine REAL map, not the entire SmallWorld domain. Please check other small-world models available in our hub.
 
 This model was incorporated on 2023-11-01.Last packaged on 2026-04-14.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-11-01.Last packaged on 2026-04-14.
 ### Output
 - **Output Dimension:** `100`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** List of the 100 nearest neighbours to the query molecule in the Enamine REAL library.
+- **Interpretation:** List of 100 nearest neighbors
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
