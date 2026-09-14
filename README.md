@@ -22,7 +22,7 @@ This model was incorporated on 2023-11-01.Last packaged on 2026-04-14.
 
 ### Output
 - **Output Dimension:** `100`
-- **Output Consistency:** `Fixed`
+- **Output Consistency:** `Variable`
 - **Interpretation:** List of 100 nearest neighbors
 
 Below are the **Output Columns** of the model:
