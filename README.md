@@ -2,7 +2,8 @@
 
 Retrieves close analogues from Enamine REAL, a make-on-demand space of readily synthesisable compounds, through the SmallWorld index. Rather than fingerprint similarity, SmallWorld scores the exact size of the maximum common edge subgraph shared by two structures, a graph-based notion of closeness made tractable by precomputation. The search is bounded at a graph-edit distance of 10 and the hundred best matches are kept. Because REAL molecules are enumerated from reliable reactions and building blocks, retrieved hits are generally orderable rather than hypothetical.
 
-This model was incorporated on 2023-11-01.Last packaged on 2026-09-14.
+This model was incorporated on 2023-11-01.
+Last packaged on 2026-09-14.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 100 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9ueu](https://hub.docker.com/r/ersiliaos/eos9ueu)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ueu.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9ueu.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos9ueu_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos9ueu_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
